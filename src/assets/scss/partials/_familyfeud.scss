@@ -1,0 +1,144 @@
+.family-feud {
+	&-dashboard {
+		padding: 15px;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+		.who-plays {
+			display: flex;
+			justify-content: space-around;
+		}
+		.questions {
+			margin-top: 15px;
+			&__container {
+				margin: 45px auto 25px auto;
+				width: 65%;
+				vertical-align: middle;
+				display: inline-block;
+			}
+			&__answer {
+				.name {
+					display: flex;
+					justify-content: space-between;
+					border-bottom: 1px solid #2f3745;
+					padding: 7px 0;
+					p {
+						flex-basis: 45%;
+						align-self: center;
+					}
+				}
+				.score {
+					align-self: center;
+				}
+			}
+			&__wrong-answer {
+				display: inline-block;
+				margin: 45px 0 25px 0;
+				padding-right: 10px;
+				vertical-align: middle;
+				width: 35%;
+				text-align: right;
+			}
+			&__payment {
+				display: flex;
+				justify-content: space-between;
+				margin-top: 30px;
+				.set-up-multiplier {
+					.active {
+						margin-top: 15px;
+					}
+				}
+			}
+			&__enquiry {
+				display: flex;
+				justify-content: space-between;
+				border-bottom: 1px solid #2E3645;
+				padding: 10px 0;
+				p {
+					align-self: center;
+					&.highlight {
+						text-shadow: 0px 0px 15px #fff;
+					}
+				}
+			}
+		}
+	}
+	&-game {
+		font-family: 'familiada';
+		color: $yellow;
+		background-color: $black;
+		padding: 15px;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		&__left-points,
+		&__right-points {
+			align-self: flex-end;
+			text-align: center;
+			opacity: .3;
+			h4 {
+				margin-bottom: 10px;
+			}
+			&.active {
+				opacity: 1;
+			}
+		}
+		&__table {
+			align-self: center;
+			width: 80%;
+			.score {
+				text-align: center;
+			}
+			.board {
+				display: flex;
+				justify-content: space-between;
+				min-height: 160px;
+				&__score-left,
+				&__score-right {
+					width: 10%;
+					text-align: center;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-around;
+					div {
+						font-size: 2em;
+						margin: 15px 0;
+					}
+					div:last-child {
+						margin-bottom: 0;
+					}
+				}
+				&__score-right {
+					margin-left: 15px;
+				}
+				&__score-left {
+					margin-right: 15px;
+				}
+				&__score-questions {
+					width: 80%;
+					h2 {
+						text-align: center;
+						font-size: 4em;
+					}
+					h3 {
+						display: flex;
+						justify-content: space-between;
+					}
+				}
+				&__sum {
+					float: right;
+					margin-top: 30px;
+					font-size: 1.2em;
+					font-weight: bold;
+					&::after {
+						clear: both;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,23 @@
+.home-page {
+	padding: 15px;
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	&__wrapper {
+		position: absolute;
+    bottom: 4em;
+    left: 50%;
+    transform: translateX(-50%);
+	}
+	&__subtitle {
+		text-align: right;
+		font-size: .8em;
+	}
+	&__eyebrow {
+		font-size: 2em;
+    text-align: right;
+	}
+}
+

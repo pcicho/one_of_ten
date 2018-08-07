@@ -1,0 +1,77 @@
+body {
+  color: $white;
+  font-family: 'Roboto';
+  overflow-y: hidden!important;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+  &:active, &:hover, &:focus, &:visited {
+    color: $white;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 5em;
+  text-transform: uppercase;
+}
+
+h3 {
+  margin: 10px 0;
+}
+
+input {
+  font-size: 1em;
+}
+
+// Modifiers
+
+.secondary-bg {
+  background-color: $secondary;
+}
+
+.primary-bg {
+  background-color: $primary;
+}
+
+.white-text {
+  color: $white;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.no-paddings {
+  padding: 0px;
+}
+
+.chip-link--hard {
+  color: #000000!important;
+  vertical-align: top;
+}
+
+// Shared Components
+
+.custom-scrollbar {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+
+
+

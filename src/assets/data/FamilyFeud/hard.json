@@ -1,0 +1,53 @@
+[
+	{
+		"question": "Jak przedasdasdasde się w życiu?",
+		"answers": [
+			{
+				"name": "kaxzcnapka",
+				"score": 60
+			},
+			{
+				"name": "linxzcijka",
+				"score": 20
+			},
+			{
+				"name": "gzxcabka",
+				"score": 30
+			},
+			{
+				"name": "ekizxcerka",
+				"score": 22
+			}
+		]
+	},
+	{
+		"question": "Więceasdasdzwierzę to",
+		"answers": [
+			{
+				"name": "lazxczma",
+				"score": 63
+			},
+			{
+				"name": "ozxcwca",
+				"score": 32
+			}
+		]
+	},
+	{
+		"question": "Drapieżasdasdczxczxcch rzek",
+		"answers": [
+			{
+				"name": "rekzxcin",
+				"score": 65
+			},
+			{
+				"name": "wiezxcloryb",
+				"score": 23
+			},
+			{
+				"name": "rzxcak",
+				"score": 21
+			}
+		]
+	}
+]

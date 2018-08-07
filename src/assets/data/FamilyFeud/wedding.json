@@ -1,0 +1,295 @@
+[
+	{
+		"question": "Czego nie robi idealny mężczyzna?",
+		"answers": [
+			{
+				"name": "nie istnieje",
+				"score": 60
+			},
+			{
+				"name": "nie pije",
+				"score": 32
+			},
+			{
+				"name": "nie zdradza",
+				"score": 20
+			},
+			{
+				"name": "nie sprzecza sie",
+				"score": 15
+			}
+		]
+	},
+	{
+		"question": "Wyraz bliskoznaczny do słowa żona?",
+		"answers": [
+			{
+				"name": "stara",
+				"score": 36
+			},
+			{
+				"name": "ukochana",
+				"score": 23
+			},
+			{
+				"name": "malzonka",
+				"score": 22
+			},
+			{
+				"name": "kobieta",
+				"score": 10
+			},
+			{
+				"name": "baba",
+				"score": 9
+			}
+		]
+	},
+	{
+		"question": "Wymień zwykłą czynność która 100-letniemu człowiekowi może zająć 30 minut",
+		"answers": [
+			{
+				"name": "wizyta w toalecie",
+				"score": 24
+			},
+			{
+				"name": "Wstanie z lozka",
+				"score": 16
+			},
+			{
+				"name": "Kochanie sie",
+				"score": 9
+			},
+			{
+				"name": "Wejscie po schodach",
+				"score": 6
+			}
+		]
+	},
+	{
+		"question": "Jak przedmiot szkolny najmniej przydaje się w życiu?",
+		"answers": [
+			{
+				"name": "kanapka",
+				"score": 60
+			},
+			{
+				"name": "linijka",
+				"score": 20
+			},
+			{
+				"name": "gabka",
+				"score": 30
+			},
+			{
+				"name": "ekierka",
+				"score": 22
+			}
+		]
+	},
+	{
+		"question": "Więcej niż jedno zwierzę to",
+		"answers": [
+			{
+				"name": "lama",
+				"score": 63
+			},
+			{
+				"name": "owca",
+				"score": 45
+			},
+			{
+				"name": "stado",
+				"score": 30
+			},
+			{
+				"name": "wataha",
+				"score": 25
+			},
+			{
+				"name": "Panowie na kawalerskim",
+				"score": 20
+			}
+		]
+	},
+	{
+		"question": "Zastajesz w domu zwłoki. Co robisz?",
+		"answers": [
+			{
+				"name": "selfie",
+				"score": 30
+			},
+			{
+				"name": "zakopuje w ogrodku",
+				"score": 25
+			},
+			{
+				"name": "bawie sie nimi w dom",
+				"score": 10
+			},
+			{
+				"name": "dzwonie po policje",
+				"score": 5
+			}
+		]
+	},
+	{
+		"question": "Wymień Polaków, którzy są laureatami Nagrody Nobla.",
+		"answers": [
+			{
+				"name": "Sklodowska",
+				"score": 30
+			},
+			{
+				"name": "Milosz",
+				"score": 25
+			},
+			{
+				"name": "Sienkiewicz",
+				"score": 10
+			},
+			{
+				"name": "Bolek",
+				"score": 7
+			}
+		]
+	},
+	{
+		"question": "Czym można świecić",
+		"answers": [
+			{
+				"name": "tylkiem",
+				"score": 45
+			},
+			{
+				"name": "biustem",
+				"score": 25
+			},
+			{
+				"name": "lysina",
+				"score": 23
+			},
+			{
+				"name": "przykladem",
+				"score": 18
+			},
+			{
+				"name": "oczami",
+				"score": 16
+			},
+			{
+				"name": "latarka",
+				"score": 8
+			}
+		]
+	},
+	{
+		"question": "Więcej niż jedno zwierzę to",
+		"answers": [
+			{
+				"name": "lama",
+				"score": 63
+			},
+			{
+				"name": "owca",
+				"score": 32
+			}
+		]
+	},
+	{
+		"question": "Państwa Ameryki Południowej",
+		"answers": [
+			{
+				"name": "Brazylia",
+				"score": 35
+			},
+			{
+				"name": "Argentyna",
+				"score": 32
+			},
+			{
+				"name": "Peru",
+				"score": 26
+			},
+			{
+				"name": "Wenezuela",
+				"score": 21
+			},
+			{
+				"name": "Kolumbia",
+				"score": 14
+			}
+		]
+	},
+	{
+		"question": "Co rośnie w miarę jedzenia",
+		"answers": [
+			{
+				"name": "Apetyt",
+				"score": 37
+			},
+			{
+				"name": "Pupa",
+				"score": 32
+			},
+			{
+				"name": "Brzuch",
+				"score": 20
+			},
+			{
+				"name": "Uda",
+				"score": 15
+			}
+		]
+	},
+	{
+		"question": "Jaki rok nie rozpoczyna się od 1 stycznia",
+		"answers": [
+			{
+				"name": "szkolny",
+				"score": 35
+			},
+			{
+				"name": "akademicki",
+				"score": 23
+			},
+			{
+				"name": "swietlny",
+				"score": 21
+			},
+			{
+				"name": "chinski",
+				"score": 19
+			}
+		]
+	},
+	{
+		"question": "Jakiego znasz króla polski",
+		"answers": [
+			{
+				"name": "Kaziemierz Wielki",
+				"score": 42
+			},
+			{
+				"name": "Bolesław Chrobry",
+				"score": 38
+			},
+			{
+				"name": "Władysław Łokietek",
+				"score": 31
+			},
+			{
+				"name": "Jan III Sobieski",
+				"score": 25
+			},
+			{
+				"name": "Stanisław August Poniatowski",
+				"score": 21
+			},
+			{
+				"name": "Zygmunt III Waza",
+				"score": 15
+			}
+		]
+	}
+]

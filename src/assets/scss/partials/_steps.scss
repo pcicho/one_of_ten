@@ -1,0 +1,40 @@
+.stepper_number {
+  border-radius: 50%;
+  background-color: $white;
+  width: 30px;
+  text-align: center;
+  height: 30px;
+  display: inline-block;
+  margin-right: 10px;
+  padding-top: 5px;
+  color: $black;
+  vertical-align: middle;
+}
+
+.label--hard {
+  span {
+    svg {
+      color: $white!important;
+      text {
+        fill: $black!important;
+      }
+    }
+  }
+}
+
+.player-field {
+  input {
+    width: 250px;
+    height: 30px;
+    margin: 10px 0;
+    padding: 15px 10px;
+  }
+}
+
+.games{
+	padding: 15px;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}

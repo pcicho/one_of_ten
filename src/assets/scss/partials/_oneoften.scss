@@ -1,0 +1,137 @@
+.snackbar--hard {
+	& > div {
+		background-color: $red;
+		span {
+			font-size: 1.2em;
+		}
+	}
+}
+
+.question-pack--hard {
+	background-color: transparent!important;
+	display: block!important;
+}
+
+// Dashboard
+
+.dashboard-one-of-ten {
+	padding: 15px;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.dashboard-input {
+	border-bottom: 1px solid $primary;
+	padding-bottom: 10px;
+	margin-bottom: 15px;
+	&__container {
+		margin: 30px 5px;
+	}
+	&__answers {
+		display: block;
+		p {
+			margin: 5px 0;
+		}
+	}
+}
+
+// Game
+
+.game-one-of-ten {
+	background-position: left;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: #000;
+	padding: 20px;
+	&::after {
+		content: '';
+		background-color: #000;
+		opacity: .7;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+	}
+	&__status {
+		display: flex;
+		text-align: center;
+		justify-content: space-between;
+		height: calc(25vh - 40px);
+	}
+	&__questions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+		height: 75vh;
+		position: relative;
+		z-index: 1;
+		h1 {
+			text-align: center;
+			text-transform: none;
+			font-size: 3em;
+			opacity: 1;
+			transition: opacity 1s ease;
+			&.disabled {
+				opacity: .1;
+				transition: opacity 1s ease;
+			}
+		}
+	}
+	&__player {
+		z-index: 1;
+		&.off {
+			opacity: 0.2;
+		}
+		&.not-asking {
+			opacity: .7;
+		}
+		&__chances {
+			span.chance {
+				height: 20px;
+				width: 20px;
+				display: inline-block;
+				background-color: grey;
+    		margin: 1px 2px;
+				&.true {
+					background-color: $green;
+					box-shadow: 0px 0px 16px 1px rgba(72, 255, 72, 0.87);
+				}
+			}
+		}
+		h1 {
+			font-size: 3.3em;
+		}
+	}
+}
+
+.progress-bar {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	box-shadow: 0px 0px 15px 0px $blue;
+	opacity: 1;
+	transition: opacity 1s ease;
+
+	&.hide {
+		opacity: 0;
+		transition: opacity 1s ease;
+	}
+	& > div {
+		& > div {
+			background-color: $blue;
+		}
+	}
+}
+
+.progress-circle {
+	vertical-align: middle;
+	color: $green!important;
+}
