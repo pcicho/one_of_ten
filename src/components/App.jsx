@@ -6,7 +6,6 @@ import {
   Link,
 } from 'react-router-dom';
 import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
 import { List, ListItem } from '@material-ui/core';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import shortid from 'shortid';
@@ -24,19 +23,12 @@ import GameFF from './views/FamilyFeud/components/Game/GameFF';
 import DashboardOOT from './views/OneOfTen/components/Game/DashboardOOT';
 import DashboardFF from './views/FamilyFeud/components/Game/DashboardFF';
 import FamilyFeud from './views/FamilyFeud/FamilyFeud';
+import Questions from './views/Shared/Questions';
 
+import OneOfTenData from '../assets/data/OneOfTen/data';
+import FamilyFeudData from '../assets/data/FamilyFeud/data';
 
 class App extends Component {
-  static propTypes = {
-    stepperReducerOOT: PropTypes.shape({
-      gameStart: PropTypes.bool,
-    }).isRequired,
-    stepperReducerFF: PropTypes.shape({
-      gameStart: PropTypes.bool,
-    }).isRequired,
-    dispatch: PropTypes.func.isRequired,
-  };
-
   constructor() {
     super();
     this.state = {
@@ -103,6 +95,15 @@ class App extends Component {
                     >
                       One of ten
                     </ListItem>
+                    <ListItem
+                      className="white-text"
+                      button
+                      component={Link}
+                      to="/one-of-ten/questions"
+                      style={{ color: '#ffffff', fontSize: '.8em', padding: '5px 24px' }}
+                    >
+                      <SubdirectoryArrowRight style={{ width: '20px', marginBottom: '4px' }} /> Questions
+                    </ListItem>
                     {this.props.stepperReducerOOT.gameStart === true && (
                       <ListItem
                         className="white-text"
@@ -135,6 +136,15 @@ class App extends Component {
                       style={{ color: '#ffffff', borderTop: '1px solid rgba(255, 255, 255, 0.20)' }}
                     >
                       Family Feud
+                    </ListItem>
+                    <ListItem
+                      className="white-text"
+                      button
+                      component={Link}
+                      to="/family-feud/questions"
+                      style={{ color: '#ffffff', fontSize: '.8em', padding: '5px 24px' }}
+                    >
+                      <SubdirectoryArrowRight style={{ width: '20px', marginBottom: '4px' }} /> Questions
                     </ListItem>
                     {this.props.stepperReducerFF.gameStart === true && (
                       <ListItem
@@ -218,13 +228,15 @@ class App extends Component {
                             {location.search.includes('game=FF') && (
                               <Route component={GameFF} />
                             )}
-                            <Route exact path="/" component={Home} />
+                            <Route exact path="/" render={() => Home} />
                             <Route exact path="/one-of-ten" render={() => <OneOfTen handleOpenSnackbarGlobal={this.handleOpenSnackbar} />} />
-                            <Route exact path="/one-of-ten/game" component={GameOOT} />
-                            <Route exact path="/one-of-ten/dashboard" component={DashboardOOT} />
+                            <Route exact path="/one-of-ten/game" render={() => GameOOT} />
+                            <Route exact path="/one-of-ten/dashboard" render={() => DashboardOOT} />
+                            <Route exact path="/one-of-ten/questions" render={() => <Questions data={OneOfTenData} />} />
                             <Route exact path="/family-feud" render={() => <FamilyFeud handleOpenSnackbarGlobal={this.handleOpenSnackbar} />} />
-                            <Route exact path="/family-feud/game" component={GameFF} />
-                            <Route exact path="/family-feud/dashboard" component={DashboardFF} />
+                            <Route exact path="/family-feud/game" render={() => GameFF} />
+                            <Route exact path="/family-feud/dashboard" render={() => DashboardFF} />
+                            <Route exact path="/family-feud/questions" render={() => <Questions data={FamilyFeudData} />} />
                             <Route render={() => <Home />} />
                           </Switch>
                         </main>

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import { Chip } from '@material-ui/core';
 import Avatar from '@material-ui/core/Avatar';
 import GameIco from '@material-ui/icons/Gamepad';
@@ -10,10 +9,6 @@ import Steper from '../Shared/Steper';
 
 
 class OneOfTen extends Component {
-  static propTypes = {
-    handleOpenSnackbarGlobal: PropTypes.func.isRequired,
-  };
-
   constructor() {
     super();
     this.state = {

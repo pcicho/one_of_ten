@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
@@ -71,22 +70,6 @@ const getStepContent = (step, props) => {
 };
 
 class VerticalLinearStepper extends React.Component {
-  static propTypes = {
-    classes: PropTypes.shape({
-    }).isRequired,
-    dispatch: PropTypes.func.isRequired,
-    handleOpenSnackbar: PropTypes.func.isRequired,
-    playerNumber: PropTypes.number.isRequired,
-    reducerName: PropTypes.string.isRequired,
-    handleOpenSnackbarGlobal: PropTypes.func.isRequired,
-    playersReducerOOT: PropTypes.shape({
-      playerList: PropTypes.array,
-    }).isRequired,
-    questionsReducerFF: PropTypes.shape({
-      playerList: PropTypes.array,
-    }).isRequired,
-  };
-
   componentWillReceiveProps(nextProps) {
     if (this.props[`stepperReducer${this.props.reducerName}`].activeStep === 3 && nextProps[`stepperReducer${this.props.reducerName}`].activeStep === 0) {
       setTimeout(() => {
@@ -200,7 +183,7 @@ class VerticalLinearStepper extends React.Component {
                       }}
                       className={classes.button}
                     >
-                        Back
+                      Back
                     </Button>
                     <Button
                       variant="raised"

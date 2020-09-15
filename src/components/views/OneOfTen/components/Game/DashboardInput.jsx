@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import { compose } from 'redux';
 import { connect } from 'react-redux';
 import Add from '@material-ui/icons/Add';
@@ -43,16 +42,6 @@ const styles = {
 
 
 class DashboardInput extends Component {
-  static propTypes = {
-    classes: PropTypes.shape({
-    }).isRequired,
-    player: PropTypes.string.isRequired,
-    index: PropTypes.number.isRequired,
-    dispatch: PropTypes.func.isRequired,
-    checkedCheckboxes: PropTypes.number.isRequired,
-    questionsReducerOOT: PropTypes.shape({}).isRequired,
-  };
-
   constructor() {
     super();
     this.state = {
@@ -139,9 +128,9 @@ class DashboardInput extends Component {
           checked={i < checkedCheckboxes}
           key={i}
           classes={{
-          root: classes.root,
-          checked: classes.checked,
-        }}
+            root: classes.root,
+            checked: classes.checked,
+          }}
         />);
       }
       return list;
@@ -193,7 +182,7 @@ class DashboardInput extends Component {
           disabled={checkedCheckboxes === 0 || !this.state.questionButtonEnabled}
           aria-label="remove"
         >
-        Ask Question
+          Ask Question
           <Question style={{ marginLeft: '10px' }} />
         </Button>
 

@@ -1,13 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import LinearProgress from '@material-ui/core/LinearProgress';
 
 class Progress extends React.Component {
-  static propTypes = {
-    className: PropTypes.string.isRequired,
-    handleProgressComplete: PropTypes.func.isRequired,
-    handleProgressNotComplete: PropTypes.func.isRequired,
-  }
   constructor() {
     super();
     this.state = {

@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { compose } from 'redux';
 import { Chip } from '@material-ui/core';
@@ -43,15 +42,6 @@ const DashboardOOT = (props) => {
       </div>
     </div>
   );
-};
-
-DashboardOOT.propTypes = {
-  classes: PropTypes.shape({
-  }).isRequired,
-  playersReducerOOT: PropTypes.shape({
-    playerList: PropTypes.arrayOf(PropTypes.string).isRequired,
-    playerChances: PropTypes.arrayOf(PropTypes.number).isRequired,
-  }).isRequired,
 };
 
 const mapStateToProps = state => ({

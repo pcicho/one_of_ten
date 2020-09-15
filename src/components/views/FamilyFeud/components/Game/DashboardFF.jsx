@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import Button from '@material-ui/core/Button';
@@ -44,21 +43,6 @@ const styles = {
 };
 
 class DashboardDD extends Component {
-  static propTypes = {
-    questionsReducerFF: PropTypes.shape({
-      activeQuestion: PropTypes.number,
-      activeEnquiry: PropTypes.number,
-      choosedAnswer: PropTypes.array,
-      selectedTeam: PropTypes.string,
-      multiply: PropTypes.number,
-      answers: PropTypes.shape({}),
-      playerList: PropTypes.array,
-    }).isRequired,
-    classes: PropTypes.shape({
-    }).isRequired,
-    dispatch: PropTypes.func.isRequired,
-  }
-
   componentWillUnmount() {
     clearTimeout(this.trueSoundTimeout);
   }
@@ -133,18 +117,11 @@ class DashboardDD extends Component {
           style={{ marginRight: '5px' }}
           onClick={() => this.handleMultiplier(i + 1)}
         >
-            x{i + 1}
+          x{i + 1}
         </Button>); //eslint-disable-line
       }
       return buttons;
     };
-
-    // const checkWrongCount = (team) => {
-    //   if (answers[team] !== undefined) {
-    //     return answers[team].wrong >= 3;
-    //   }
-    //   return false;
-    // };
 
     const checkPlayersWrong = (player) => {
       if (answers[player] !== undefined || answers[player]) {

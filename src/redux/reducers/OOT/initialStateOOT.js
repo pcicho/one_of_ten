@@ -11,6 +11,7 @@ const initialStateOOT = {
     activeQuestion: 0,
     questionNumber: 0,
     askingPlayer: 0,
+    questions: [[], [], []],
   },
 };
 

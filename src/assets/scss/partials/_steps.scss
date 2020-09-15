@@ -12,6 +12,10 @@
 }
 
 .label--hard {
+  &.Mui-selected {
+    color: $white!important;
+    background-color: $primary!important;
+  }
   span {
     svg {
       color: $white!important;

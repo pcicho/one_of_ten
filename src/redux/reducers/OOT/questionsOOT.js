@@ -9,6 +9,7 @@ const questionsReducerOOT = (state = {}, action) => {
       questionNumber: state.questionNumber || 0,
       askingPlayer: state.askingPlayer || 0,
       activeQuestion: action.questions,
+      questions: state.questions,
     };
   }
   if (action.type === 'ASK_QUESTION_OOT') {
@@ -21,6 +22,7 @@ const questionsReducerOOT = (state = {}, action) => {
       questionNumber,
       askingPlayer: action.player,
       activeQuestion: state.activeQuestion || 0,
+      questions: state.questions,
     };
   }
   if (action.type === 'START_AGAIN_OOT') {
@@ -29,12 +31,30 @@ const questionsReducerOOT = (state = {}, action) => {
       questionNumber,
       askingPlayer: action.player,
       activeQuestion: state.activeQuestion || 0,
+      questions: state.questions,
+    };
+  }
+  if (action.type === 'LOAD_OOT_QUESTION_DATA') {
+    return {
+      questionNumber: state.questionNumber || 0,
+      askingPlayer: state.askingPlayer || 0,
+      activeQuestion: activeState || 0,
+      questions: action.questions,
+    };
+  }
+  if (action.type === 'REMOVE_OOT_QUESTION_DATA') {
+    return {
+      questionNumber: state.questionNumber || 0,
+      askingPlayer: state.askingPlayer || 0,
+      activeQuestion: activeState || 0,
+      questions: action.questions,
     };
   }
   return {
     questionNumber: state.questionNumber || 0,
     askingPlayer: state.askingPlayer || 0,
     activeQuestion: activeState || 0,
+    questions: state.questions,
   };
 };
 

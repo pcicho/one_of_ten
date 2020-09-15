@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import PlayerInput from './PlayerInput';
 
 const StepOne = (props) => {
@@ -15,12 +14,6 @@ const StepOne = (props) => {
       {getPlayers()}
     </div>
   );
-};
-
-StepOne.propTypes = {
-  playerNumber: PropTypes.number.isRequired,
-  inputPlaceholder: PropTypes.string.isRequired,
-  reducerName: PropTypes.string.isRequired,
 };
 
 export default StepOne;

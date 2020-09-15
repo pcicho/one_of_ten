@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Scrollbars } from 'react-custom-scrollbars';
-import PropTypes from 'prop-types';
 
 export default class ScrollBar extends Component {
   constructor() {
@@ -44,7 +43,3 @@ export default class ScrollBar extends Component {
     );
   }
 }
-
-ScrollBar.propTypes = {
-  children: PropTypes.node.isRequired,
-};

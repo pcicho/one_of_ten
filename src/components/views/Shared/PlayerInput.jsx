@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
@@ -40,20 +39,6 @@ const PlayerInput = props => (
     />
   </div>
 );
-
-PlayerInput.propTypes = {
-  playerNumber: PropTypes.number.isRequired,
-  handleChangeInput: PropTypes.func.isRequired,
-  handleSetUpPlayers: PropTypes.func.isRequired,
-  inputPlaceholder: PropTypes.string.isRequired,
-  reducerName: PropTypes.string.isRequired,
-  playersReducerOOT: PropTypes.shape({
-    playerList: PropTypes.array,
-  }).isRequired,
-  questionsReducerFF: PropTypes.shape({
-    playerList: PropTypes.array,
-  }).isRequired,
-};
 
 const mapStateToProps = state => ({
   playersReducerOOT: state.playersReducerOOT,
